@@ -28,5 +28,5 @@ class Doktor(Personel.Personel):
         self.maas = int(self.maas*1.2)
 
     def __str__(self):
-        return f"Doktor;\n{super().__str__()}\n Uzmanlik: {self.uzmanlik}\n Deneyim Yili: {self.deneyim_yili}\n Hastane: {self.hastane}"
+        return f"{super().__str__()} {self.uzmanlik} {self.deneyim_yili} {self.hastane}"
 

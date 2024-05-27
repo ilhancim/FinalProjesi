@@ -28,5 +28,5 @@ class Hemsire(Personel.Personel):
         self.maas = int(self.maas*1.2)
 
     def __str__(self):
-        return f"Hemsire;\n{super().__str__()}\n Calisma Saati: {self.calisma_saati}\n Sertifika: {self.sertifika}\n Hastane: {self.hastane}"
+        return f"{super().__str__()} {self.calisma_saati} {self.sertifika} {self.hastane}"
 

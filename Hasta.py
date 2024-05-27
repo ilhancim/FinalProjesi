@@ -44,6 +44,5 @@ class Hasta():
         self.tedavi = tedavi
 
     def __str__(self):
-        return (f" Hasta No: {self.hasta_no}\n Ad: {self.ad}\n Soyad: {self.soyad}\n"
-                f" Dogum Tarihi: {self.dogum_tarihi}\n Hastalik: {self.hastalik}\n Tedavi: {self.tedavi}")
+        return (f"{self.hasta_no} {self.ad} {self.soyad} {self.dogum_tarihi} {self.hastalik} {self.tedavi}")
 
