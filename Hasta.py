@@ -43,6 +43,30 @@ class Hasta():
     def setTedavi(self, tedavi):
         self.tedavi = tedavi
 
+    #tedavi girilirken x_yyyy formatında girilir x kısmı(A, B, C, D, E) tedavinin süresi için yyyy kısmı ise tedavi adıdır.
+    def tedaviSuresiHesapla(self):
+        self.sure = 7
+        #ilk harf A ise tedavi süresi 7 gün kalır
+        if self.tedavi[0] == "A":
+            self.sure = self.sure
+
+        #ilk harf B ise tedavi süresine 2 gün eklenir
+        elif self.tedavi[0] == "B":
+            self.sure = self.sure + 2
+
+        #ilk harf C ise tedavi süresine 5 gün eklenir
+        elif self.tedavi[0] == "C":
+            self.sure = self.sure + 5
+
+        #ilk harf D ise tedavi süresine 9 gün eklenir
+        elif self.tedavi[0] == "D":
+            self.sure = self.sure + 9
+
+        #ilk harf E ise tedavi süresine 14 gün eklenir
+        elif self.tedavi[0] == "E":
+            self.sure = self.sure + 14
+
+
     def __str__(self):
         return (f"{self.hasta_no} {self.ad} {self.soyad} {self.dogum_tarihi} {self.hastalik} {self.tedavi}")
 
