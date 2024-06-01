@@ -68,6 +68,8 @@ class Hasta():
         elif self.tedavi[0] == "E":
             self.sure = self.sure + 14
 
+        return self.sure
+
     # Str metodu eklendi
     def __str__(self):
         return (f"{self.hasta_no} {self.ad} {self.soyad} {self.dogum_tarihi} {self.hastalik} {self.tedavi}")
