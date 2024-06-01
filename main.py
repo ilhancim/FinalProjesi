@@ -22,9 +22,9 @@ hemsire3 = Hemsire.Hemsire("3008","Muhammet Faik","Duman","Hemsire",5700,"12","Y
 hemsireler = [hemsire1,hemsire2,hemsire3]
 
 #Hasta nesneleri tanımlandı ve hastalar listesine eklendi
-hasta1 = Hasta.Hasta("4101","Semih","Ertan","06.02.2000","Kol kirik","Alci")
-hasta2 = Hasta.Hasta("4202","Mehmet Akif","Duman","26.09.1990","Miyopi","Gozluk")
-hasta3 = Hasta.Hasta("4303","Irem","Bagcivan","07.12.1980","Kizamik","Krem")
+hasta1 = Hasta.Hasta("4101","Semih","Ertan","06.02.2000","Kol kirik","C_Alci")
+hasta2 = Hasta.Hasta("4202","Mehmet Akif","Duman","26.09.1990","Miyopi","A_Gozluk")
+hasta3 = Hasta.Hasta("4303","Irem","Bagcivan","07.12.1980","Kizamik","E_Krem")
 hastalar = [hasta1,hasta2,hasta3]
 
 #Personellerin bilgileri personelBilgi listesine eklendi
