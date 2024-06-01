@@ -6,21 +6,23 @@ class Personel():
         self.departman = departman
         self.maas = maas
 
+    #Get metodları eklendi
     def getPersonelNo(self):
-        return personel_no
+        return self.personel_no
 
     def getAd(self):
-        return ad
+        return self.ad
 
     def getSoyad(self):
-        return soyad
+        return self.soyad
 
     def getDepartman(self):
-        return departman
+        return self.departman
 
     def getMaas(self):
-        return maas
+        return self.maas
 
+    #Set metodları eklendi
     def setPersonelNo(self, personel_no):
         self.personel_no = personel_no
 
@@ -36,5 +38,6 @@ class Personel():
     def setMaas(self, maas):
         self.maas = maas
 
+    #Str metodu eklendi
     def __str__(self):
         return (f"{self.personel_no} {self.ad} {self.soyad} {self.departman} {self.maas} ")

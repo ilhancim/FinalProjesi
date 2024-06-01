@@ -6,6 +6,7 @@ class Hemsire(Personel.Personel):
         self.sertifika = sertifika
         self.hastane = hastane
 
+    #Get metodları eklendi
     def getCalismaSaati(self):
         return self.calisma_saati
 
@@ -15,6 +16,7 @@ class Hemsire(Personel.Personel):
     def getHastane(self):
         return self.hastane
 
+    #Set metodları eklendi
     def SetCalismaSaati(self, calisma_saati):
         self.calisma_saati = calisma_saati
 
@@ -24,9 +26,11 @@ class Hemsire(Personel.Personel):
     def SetHastane(self, hastane):
         self.hastane = hastane
 
+    # maası 1.2 katına eşitleyen maasArttir metodu eklendi
     def maasArttir(self):
         self.maas = int(self.maas*1.2)
 
+    #Str metodu eklendi
     def __str__(self):
         return f"{super().__str__()} {self.calisma_saati} {self.sertifika} {self.hastane}"
 

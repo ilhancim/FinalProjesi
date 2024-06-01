@@ -6,6 +6,7 @@ class Doktor(Personel.Personel):
         self.deneyim_yili = deneyim_yili
         self.hastane = hastane
 
+    #Get metodları eklendi
     def getUzmanlik(self):
         return self.uzmanlik
 
@@ -15,6 +16,7 @@ class Doktor(Personel.Personel):
     def getHastane(self):
         return self.hastane
 
+    #Set metodları eklendi
     def setUzmanlik(self, uzmanlik):
         self.uzmanlik = uzmanlik
 
@@ -24,9 +26,11 @@ class Doktor(Personel.Personel):
     def setHastane(self, hastane):
         self.hastane = hastane
 
+    #maası 1.2 katına eşitleyen maasArttir metodu eklendi
     def maasArttir(self):
         self.maas = int(self.maas*1.2)
 
+    #Str metodu eklendi
     def __str__(self):
         return f"{super().__str__()} {self.uzmanlik} {self.deneyim_yili} {self.hastane}"
 

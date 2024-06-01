@@ -7,6 +7,7 @@ class Hasta():
         self.hastalik = hastalik
         self.tedavi = tedavi
 
+    #Get metodları eklendi
     def getHastaNo(self):
         return self.hasta_no
 
@@ -25,6 +26,7 @@ class Hasta():
     def getTedavi(self):
         return self.tedavi
 
+    #Set metodları eklendi
     def setHastaNo(self, hasta_no):
         self.hasta_no = hasta_no
 
@@ -66,7 +68,7 @@ class Hasta():
         elif self.tedavi[0] == "E":
             self.sure = self.sure + 14
 
-
+    # Str metodu eklendi
     def __str__(self):
         return (f"{self.hasta_no} {self.ad} {self.soyad} {self.dogum_tarihi} {self.hastalik} {self.tedavi}")
 
