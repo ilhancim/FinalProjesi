@@ -33,4 +33,3 @@ class Hemsire(Personel.Personel):
     #Str metodu eklendi
     def __str__(self):
         return f"{super().__str__()} {self.calisma_saati} {self.sertifika} {self.hastane}"
-

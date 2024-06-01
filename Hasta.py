@@ -71,4 +71,3 @@ class Hasta():
     # Str metodu eklendi
     def __str__(self):
         return (f"{self.hasta_no} {self.ad} {self.soyad} {self.dogum_tarihi} {self.hastalik} {self.tedavi}")
-

@@ -33,4 +33,3 @@ class Doktor(Personel.Personel):
     #Str metodu eklendi
     def __str__(self):
         return f"{super().__str__()} {self.uzmanlik} {self.deneyim_yili} {self.hastane}"
-
